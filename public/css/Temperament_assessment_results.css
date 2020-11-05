@@ -1,0 +1,166 @@
+*{
+    margin: 0 ;
+    padding: 0px;
+}
+body,html{
+    width: 100%;
+
+
+}
+body{
+background-image: url(../icon/icon/jieguoback.png);
+background-size: 100%;
+
+
+}
+.contant{
+    margin: 0 auto;
+    width: 1650px;
+    height: 672px;
+    /* background-color: pink; */
+    margin-top: 120px;
+}
+.contant>div{
+    float: left;
+}
+.zhuxiao{
+    float: right;
+
+    margin-right: 40px;
+}
+.zhuxiao>button{
+    width: 122px;
+    height: 43px;
+    background: #5db2e8;
+    border-radius: 5px;
+border: 0px;
+color: white;
+outline: none;
+}
+.left{
+    height: 80%;
+    width: 30%;
+    /* background-color: yellow; */
+    padding-top: 50px;
+
+}
+.left>p{
+    width: 426px;
+    height: 200px;
+    /* background: #60b4e9; */
+    font-size: 60px;
+    font-family: Microsoft YaHei Regular, Microsoft YaHei Regular-Regular;
+    font-weight: bold;
+    text-align: center;
+    color: #38a1e3;
+    line-height: 98px;
+    margin-top: 50px;
+
+}
+.left>button{
+    width: 204px;
+height: 61px;
+opacity: 0.8;
+background: #7bbce4;
+border-radius: 6px 6px 6px 6px;
+font-size: 24px;
+font-family: Microsoft YaHei UI Regular, Microsoft YaHei UI Regular-Regular;
+font-weight: 400;
+text-align: center;
+color: #ffffff;
+line-height: 28px;
+letter-spacing: 3px;
+margin-left:97px;
+border: 0px;
+}
+.contantcenter{
+    width: 50%;
+    height: 100%;
+  /* background-color: yellow; */
+
+}
+.contantcenter_top{
+    height: 200px;
+    /* background-color: red; */
+}
+.contantcenter_top>p {
+    width: 354px;
+    height: 44px;
+    font-size: 26px;
+    font-family: Microsoft YaHei Regular, Microsoft YaHei Regular-Regular;
+    font-weight: bold;
+    text-align: left;
+    color: #797a7b;
+    line-height: 50px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 33px;
+}
+.contantcenter_buttom{
+    height: 260px;
+    /* background-color: yellow; */
+    text-align: center;
+}
+table {
+    border-collapse:collapse;
+   border:1px solid black;
+   font-size: 16px;
+font-family: Microsoft YaHei UI Regular, Microsoft YaHei UI Regular-Regular;
+font-weight: 400;
+
+color: #797a7b;
+line-height: 18px;
+letter-spacing: -1px;
+  }
+  th,td{
+    border:1px solid black;
+  }
+  td{
+      height: 89px;
+  }
+  th{
+    height: 50px;
+  }
+  .right {
+    width: 310px;
+    height: 245px;
+    margin-top: 195px;
+    margin-left: 10px;
+}
+.right>p{
+
+height: 15px;
+font-size: 16px;
+font-family: Microsoft YaHei UI Regular, Microsoft YaHei UI Regular-Regular;
+font-weight: 400;
+text-align: left;
+color: #797a7b;
+line-height: 28px;
+letter-spacing: 2px;
+margin-top: 20px;
+}
+.floot{
+    width: 200px;
+    height: 100px;
+    /* background-color: pink; */
+    float: right;
+    margin-right: 320px;
+}
+.floot>button{
+    width: 192px;
+height: 52px;
+background: #38a1e3;
+font-size: 20px;
+font-family: Microsoft YaHei UI Regular, Microsoft YaHei UI Regular-Regular;
+font-weight: 400;
+text-align: center;
+color: #ffffff;
+line-height: 28px;
+letter-spacing: 3px;
+border-radius: 10px;
+border: 0px;
+outline: none;
+}
+.floot>button:hover,.zhuxiao>button:hover{
+cursor: pointer;
+}

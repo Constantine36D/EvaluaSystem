@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+    <div class="logo"></div>
+    <div class="cont">
+        <div class="box1">
+            <p>个人信息</p>
+            <form action="#" name="form" id="form1">
+                <div class="box_cont">
+                    <div class="line"><span>电话:</span>   <input type="text" value=""class="phone" name="phone" id="phone"></div>
+                    <div class="line"><span>名字:</span><input type="text" value=""  class="name" name="name" id="name"></div>
+                    <div class="line"><span>年龄:</span><input type="text" name="age" id="age" value=""></div>
+                    <div class="line"><span>性别:</span>
+                        <select name="sex" id="sex">
+                        <option value ="男">男</option>
+                        <option value ="女">女</option>
+                      </select>
+                    </div>
+                    <div class="line"><span>学历:</span><input type="text" name="background" id="background" value=""></div>
+                    <div class="line"><span>退伍时间:</span><input type="date" name="backtime" id="backtime" value=""></div>
+                    <div class="line"><span>退伍方式:</span>
+                        <select name="backway" id="backway">
+                        <option value ="自主就业">自主就业</option>
+                        <option value ="计划安置">计划安置</option>
+                        <option value ="复员">复员</option>
+                        <option value ="2011年前退役">2011年前退役</option>
+                      </select>
+                    </div>
+                    <div class="line"><span>目前从事:</span><input type="text" name="nowwork" id="nowwork" value=""></div>
+                </div>
+                <div class="buttn">
+                    <input type="button" name="submit" id="submit" value="提交" onclick="register2()">
+                </div>
+            </form>
+        </div>
+        <div class="box2">
+            <img src="../img/form.png">
+        </div>
+    </div>
+</body>
+
+
+<script src="../js/jquery-2.0.0.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/loading.js"></script>
+<script src="../js/Registered.js"></script>
+</html>
