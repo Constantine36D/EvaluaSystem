@@ -2,7 +2,7 @@
 
 namespace App\Admin\Controllers;
 
-use App\Models\career_test_type;
+use App\Models\Career_test_type;
 use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
@@ -24,7 +24,7 @@ class CareerTestTypeController extends AdminController
      */
     protected function grid()
     {
-        $grid = new Grid(new career_test_type());
+        $grid = new Grid(new Career_test_type());
 
         $grid->column('id', __('Id'));
         $grid->column('type', __('Type'));
@@ -41,7 +41,7 @@ class CareerTestTypeController extends AdminController
      */
     protected function detail($id)
     {
-        $show = new Show(career_test_type::findOrFail($id));
+        $show = new Show(Career_test_type::findOrFail($id));
 
         $show->field('id', __('Id'));
         $show->field('type', __('Type'));
@@ -57,7 +57,7 @@ class CareerTestTypeController extends AdminController
      */
     protected function form()
     {
-        $form = new Form(new career_test_type());
+        $form = new Form(new Career_test_type());
 
         $form->text('type', __('Type'));
         $form->text('info', __('信息'));

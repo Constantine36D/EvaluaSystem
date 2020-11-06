@@ -2,7 +2,7 @@
 
 namespace App\Admin\Controllers;
 
-use App\Models\career_interest_test;
+use App\Models\Career_interest_test;
 use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
@@ -24,7 +24,7 @@ class CareerIntertstController extends AdminController
      */
     protected function grid()
     {
-        $grid = new Grid(new career_interest_test());
+        $grid = new Grid(new Career_interest_test());
 
         $grid->column('id', __('Id'));
         $grid->column('name', __('姓名'));
@@ -47,7 +47,7 @@ class CareerIntertstController extends AdminController
      */
     protected function detail($id)
     {
-        $show = new Show(career_interest_test::findOrFail($id));
+        $show = new Show(Career_interest_test::findOrFail($id));
 
         $show->field('id', __('Id'));
         $show->field('name', __('姓名'));
@@ -69,7 +69,7 @@ class CareerIntertstController extends AdminController
      */
     protected function form()
     {
-        $form = new Form(new career_interest_test());
+        $form = new Form(new Career_interest_test());
 
         $form->text('name', __('姓名'))->default('退伍军人');
         $form->number('R', __('R'));
