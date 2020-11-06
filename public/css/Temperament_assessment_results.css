@@ -93,13 +93,72 @@
         margin-right: -7rem;
     }
 }
+@media only screen and (max-width: 667px){
+    .main1 {
+        padding: 5rem 2rem 4rem 1rem;
+    }
+    .inner {
+        display: flex;
+        flex-direction: column;
+    }
+    .inner-right {
+        padding-top: 1rem;
+    }
+    .inner {
+        margin-right: -1rem;
+    }
+    .left p {
+        font-size: 1.2rem !important;
+    }
+    .inner-left-top p {
+        display: flex;
+        flex-direction: column;
+    }
+    .title button {
+        margin-left: 0;
+        width: 5rem !important;
+        height: 2rem !important;
+        font-size: 0.2rem !important;
+    }
+}
+@media only screen and (max-width: 414px){
+    .main1 {
+        padding: 5rem 2rem 4rem 1rem;
+    }
+    .inner {
+        display: flex;
+        flex-direction: column;
+    }
+    .inner-right {
+        padding-top: 1rem;
+    }
+    .inner {
+        margin-right: -1rem;
+    }
+    .left p {
+        font-size: 1.2rem !important;
+    }
+    .inner-left-top p {
+        display: flex;
+        flex-direction: column;
+    }
+    .title button {
+        margin-left: 0;
+        width: 5rem !important;
+        height: 2rem !important;
+        font-size: 0.2rem !important;
+    }
+}
+
+
+
 *{
     margin: 0 ;
     padding: 0px;
 }
 body,html{
     width: 100%;
- 
+
 
 }
 body{
@@ -137,20 +196,20 @@ outline: none;
     width: 30%;
     /* background-color: yellow; */
     padding-top: 50px;
-  
+
 }
 .left>p{
-    width: 426px;
-    height: 200px;
+    /*width: 426px;*/
+    /*height: 200px;*/
     /* background: #60b4e9; */
     font-size: 60px;
     font-family: Microsoft YaHei Regular, Microsoft YaHei Regular-Regular;
     font-weight: bold;
     text-align: center;
     color: #38a1e3;
-    line-height: 98px; 
+    line-height: 98px;
     margin-top: 50px;
-  
+
 }
 .left>button{
     width: 204px;
@@ -172,7 +231,7 @@ border: 0px;
     width: 45%;
     height: 100%;
   /* background-color: yellow; */
-   
+
 }
 .contantcenter_top{
     height: 200px;
@@ -224,7 +283,7 @@ letter-spacing: -1px;
     margin-left: 10px;
 }
 .right>p{
-    
+
 height: 15px;
 font-size: 16px;
 font-family: Microsoft YaHei UI Regular, Microsoft YaHei UI Regular-Regular;
