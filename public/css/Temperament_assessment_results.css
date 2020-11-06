@@ -171,3 +171,9 @@ outline: none;
 .floot>button:hover,.zhuxiao>button:hover{
 cursor: pointer;
 }
+@media screen and (max-width: 414px) {
+    .floot{
+        margin-right: 0px;
+    }
+}
+
