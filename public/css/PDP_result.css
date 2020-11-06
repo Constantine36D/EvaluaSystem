@@ -87,3 +87,67 @@
   letter-spacing: 0.04rem;
   line-height: 0.47rem;
 }
+@media screen and (max-width: 768px) {
+  .content_style {
+    line-height: 0.5rem;
+  }
+  .back_btn {
+    width: 3rem;
+  }
+  .box_f .box_img {
+    width: 3.1rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .header_title .qz_mark {
+    width: 4.5rem;
+    height: 20px;
+    line-height: 20px;
+    transform: translateX(-20%);
+  }
+  .content_style {
+    line-height: 0.4rem;
+    word-wrap: break-word;
+    word-break: break-all;
+    height: 12rem;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+  .content_style p {
+    line-height: 0.7rem;
+    font-weight: 100;
+    color: #000000;
+  }
+  .back_btn {
+    width: 3rem;
+  }
+  .box_img {
+    max-height: 100%;
+    width: 5rem !important;
+    height: 11rem !important;
+  }
+  .box_img img {
+    height: 200px !important;
+  }
+  .box_f .count h2 {
+    line-height: 15px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .back_btn {
+    width: 5rem;
+    height: 20px;
+    line-height: 20px;
+  }
+  .content_style p {
+    line-height: 1rem;
+    letter-spacing: 0.02rem;
+    font-weight: 100;
+    color: #000000;
+  }
+}
+@media screen and (max-width: 320px) {
+  .box_f .count {
+    margin-top: 2rem;
+  }
+}

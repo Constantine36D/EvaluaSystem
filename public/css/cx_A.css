@@ -26,8 +26,8 @@ form tr:nth-child(even) {
   margin-bottom: 0.71rem !important;
 }
 form th::after {
-    content: "*";
-    color: red;
+  content: "*";
+  color: red;
 }
 form th {
   margin-top: 0.74rem !important;
@@ -39,22 +39,17 @@ form th {
   letter-spacing: 1px;
 }
 form td {
-    padding: 0.3125rem 0;
+  padding: 0.05rem 0;
   width: 3.82rem;
   font-size: 0.16rem;
   color: #000000;
   line-height: 0.5rem;
-  letter-spacing: 1px;
+  letter-spacing: 0.01rem;
   font-weight: bold;
 }
 .topic_btn {
   text-align: center;
-    margin: 80px 0;
-
-}
-.topic_btn :hover{
-  text-decoration: none;
-  cursor: pointer;
+  margin-bottom: 80px;
 }
 .topic_btn a {
   width: 1.33rem;
@@ -64,105 +59,81 @@ form td {
   font-size: 0.18rem;
   color: #fff;
   padding: 0.13rem 0.35rem;
-
 }
 .topic_btn a:last-child {
   margin-left: 1.08rem;
-}
-a{
-  text-decoration: none;
-}
-table{
-  width: 100%;
-}
-table th {
-  margin-top: 0.74rem !important;
-  font-size: 0.24rem;
-  height: 0.26rem;
-  font-family: Microsoft YaHei Regular, Microsoft YaHei Regular-Regular;
-  color: #000000;
-  line-height: 0.5rem;
-  letter-spacing: 1px;
-}
-table td {
-  width: 3.82rem;
-  font-size: 0.16rem;
-  color: #000000;
-  line-height: 0.5rem;
-  letter-spacing: 1px;
-  font-weight: bold;
 }
 html {
   font-size: 100px;
 }
 @media screen and (min-width: 280px) {
   html {
-    font-size: 17.5px;
+    font-size: 15.9863285px;
   }
 }
 @media screen and (min-width: 320px) {
   html {
-    font-size: 20px;
+    font-size: 18.27008972px;
   }
 }
 @media screen and (min-width: 360px) {
   html {
-    font-size: 22.5px;
+    font-size: 20.55385093px;
   }
 }
 @media screen and (min-width: 375px) {
   html {
-    font-size: 23.4375px;
+    font-size: 21.41026139px;
   }
 }
 @media screen and (min-width: 384px) {
   html {
-    font-size: 24px;
+    font-size: 21.92410766px;
   }
 }
 @media screen and (min-width: 400px) {
   html {
-    font-size: 25px;
+    font-size: 22.83761215px;
   }
 }
 @media screen and (min-width: 414px) {
   html {
-    font-size: 25.875px;
+    font-size: 23.875px;
   }
 }
 @media screen and (min-width: 480px) {
   html {
-    font-size: 30px;
+    font-size: 27.40513458px;
   }
 }
 @media screen and (min-width: 540px) {
   html {
-    font-size: 33.75px;
+    font-size: 30.8307764px;
   }
 }
 @media screen and (min-width: 720px) {
   html {
-    font-size: 45px;
+    font-size: 41.10770187px;
   }
 }
 @media screen and (min-width: 780px) {
   html {
-    font-size: 48.75px;
+    font-size: 44.53334369px;
   }
 }
 @media screen and (min-width: 992px) {
   html {
-    font-size: 62px;
+    font-size: 56.63727813px;
   }
 }
 @media screen and (min-width: 1170px) {
   html {
-    font-size: 73.125px;
+    font-size: 66.80001554px;
   }
 }
 @media screen and (min-width: 1440px) {
   html {
-    font-size: 90px;
+    font-size: 82.21540374px;
   }
 }
 @media screen and (min-width: 1928px) {
@@ -172,6 +143,30 @@ html {
 }
 @media screen and (min-width: 2560px) {
   html {
-    font-size: 160px;
+    font-size: 146.16071775px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .header_title .qz_mark {
+    width: 3.5rem;
+    height: 20px;
+    line-height: 20px;
+  }
+  .cx_title p {
+    line-height: 1rem;
+  }
+  .cx_form table td {
+    padding: 1rem 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  .cx_form table td {
+    padding: 1rem 0;
+    font-size: 12px;
+    overflow: hidden;
+    word-break: break-all;
+    width: 10rem;
+    font-weight: 100;
+    word-wrap: break-word;
   }
 }

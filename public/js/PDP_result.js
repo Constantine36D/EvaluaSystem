@@ -10,7 +10,7 @@ show_pdp()
     // 展示pdp结果分数的页面
      function  show_pdp(){
         for (var i = 0; i < 5; i++) {
-            let str = `<h2 >您该项的得分是 ${url_Arr[i+1]}分</h2>  `
+            let str =`<h2 >您该项的得分是${url_Arr[i+1]}分</h2>  `
             $(".count").eq(i).empty().append(str)
         }
     }
