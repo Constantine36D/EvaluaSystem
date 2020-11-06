@@ -21,12 +21,18 @@ $(document).ready(function() {
 
 
         var Str =``
-            Str += `<p>A  胆汁质的总分是【${A}】</p><p>B  多血质的总分是【${B}】</p>
-                    <p>C  粘液质的总分是【${C}】</p>
-                    <p>D  胆汁质的总分是【${D}】</p>
+            Str += `
+                    <p>
+                    <span>A 胆汁质的总分是【${A}】</span>
+                    <span>B 多血质的总分是【${B}】</span>
+                    </p>
+                    <p>
+                    <span>C 粘液质的总分是【${C}】</span>
+                    <span>D 胆汁质的总分是【${D}】</span>
+                    </p>
                 `
-            $('#show').append(Str);
-  
+            $('.inner-left-top').append(Str);
+
 
     })
 
