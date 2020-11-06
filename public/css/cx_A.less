@@ -69,8 +69,35 @@ font-weight: bold;
         margin-left: 108rem/@no;
     }
 }
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right{
+
+    margin-top: 50%;
+}
 @import "common";
+@media screen and (max-width:768px){
+    .lun_div .carousel-inner .lun_content {
+        line-height: 0.35rem;}
+        .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right{
+
+            margin-top: 60%;
+        }
+}
 @media screen and (max-width:425px){
+    .lun_div {
+        top: 4.08rem;
+        margin-left: 6rem;
+    }
+    .lun_div .carousel-inner .lun_content {
+        display: inline-block;
+        width: 7.9rem;
+        height: 60px;
+        overflow: hidden;
+        overflow-y: scroll;
+        font-size: 12px;
+        text-align: center;
+        line-height: 0.8rem;
+    }
+   
     .header_title .qz_mark {
         width: 350rem/@no;
         height: 20px;
@@ -83,6 +110,16 @@ font-weight: bold;
     .cx_form  table td{
         padding: 100rem/@no 0  ;
     }
+    form th {
+        line-height: 0.6rem;
+} .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right{
+
+    margin-top: 90%;
+}
+.lun_div .carousel-control .glyphicon-chevron-right {
+    right: -6%;
+}
+
 }
 @media screen and (max-width:320px){
     .cx_form  table td{
@@ -94,4 +131,6 @@ font-weight: bold;
         font-weight: 100;
         word-wrap: break-word;
     }
+form th {
+    line-height: 0.9rem;}
 }
