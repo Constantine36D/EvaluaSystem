@@ -28,6 +28,10 @@ form tr{
 form tr:nth-child(even){
     margin-bottom: 71rem/@no !important;
 }
+form th::after{
+    content: "*";
+    color: red;
+}
 form th{
     margin-top: 74rem/@no !important;
     font-size: 24rem/@no;
@@ -39,16 +43,17 @@ line-height: 50rem/@no;
 letter-spacing: 1px;
 }
 form td{
+    padding: 5rem/@no 0;
     width:382rem/@no;
 font-size: 16rem/@no;
 color: #000000;
 line-height: 50rem/@no;
-letter-spacing: 1px;
+letter-spacing: 1rem/@no;
 font-weight: bold;
 }
 .topic_btn {
     text-align: center;
-
+    margin-bottom: 80px;
     a {
         width: 133rem/@no;
         height: 47rem/@no;
@@ -65,3 +70,28 @@ font-weight: bold;
     }
 }
 @import "common";
+@media screen and (max-width:425px){
+    .header_title .qz_mark {
+        width: 350rem/@no;
+        height: 20px;
+        line-height: 20px;
+
+    }
+    .cx_title p{
+        line-height:100rem/@no ;
+    }
+    .cx_form  table td{
+        padding: 100rem/@no 0  ;
+    }
+}
+@media screen and (max-width:320px){
+    .cx_form  table td{
+        padding: 100rem/@no  0 ;
+        font-size: 12px;
+        overflow: hidden;
+        word-break: break-all;
+        width: 10rem;
+        font-weight: 100;
+        word-wrap: break-word;
+    }
+}

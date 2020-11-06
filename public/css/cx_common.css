@@ -42,7 +42,7 @@ html {
   text-align: center;
   color: #ffffff;
   line-height: 0.61rem;
-  letter-spacing: 3px;
+  letter-spacing: 0.03rem;
 }
 .login_btn {
   vertical-align: middle;
@@ -73,7 +73,7 @@ html {
 }
 .lun_div {
   width: 10.51rem;
-  opacity: 0.9;
+  opacity: 0.8;
   background: #f8f8f8;
   border-radius: 20px;
   position: absolute;
@@ -81,12 +81,9 @@ html {
   top: 4.08rem;
   margin-left: 5.47rem;
 }
-.lun_div .carousel {
-    padding: 0.77rem;
-}
 .lun_div .carousel-inner {
-    float: left;
-    padding-bottom: 0.55rem;
+  float: left;
+  padding-bottom: 0.55rem;
 }
 .lun_div .carousel-inner .lun_content {
   display: inline-block;
@@ -109,7 +106,6 @@ html {
 .lun_div .carousel-control .glyphicon-chevron-right {
   width: 0.23rem;
   height: 0.39rem;
-  margin-top: 0.4rem;
 }
 .lun_div .carousel-control .glyphicon-chevron-left {
   margin-left: -1.83rem;
@@ -146,7 +142,7 @@ html {
 .topic {
   width: 16.35rem;
   margin-left: 1rem;
-  /*height: 18.9rem;*/
+  height: 18.9rem;
 }
 .topic iframe {
   height: 18.9rem;
@@ -161,94 +157,83 @@ html {
   color: #000000;
   letter-spacing: 0.16rem;
 }
-.carousel-control.left,.carousel-control.right {
-     background-image: none;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
-    background-repeat: repeat-x;
-}
-.zx：hover{
-    color: black;
-    background-color:  #38a1e3
-}
-.zx{
-    border: 1px solid #38a1e3;
-    cursor: pointer;
-}
-
-a{
-  text-decoration:none;
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+  background-repeat: repeat-x;
 }
 html {
   font-size: 100px;
 }
 @media screen and (min-width: 280px) {
   html {
-    font-size: 17.5px;
+    font-size: 15.9863285px;
   }
 }
 @media screen and (min-width: 320px) {
   html {
-    font-size: 20px;
+    font-size: 18.27008972px;
   }
 }
 @media screen and (min-width: 360px) {
   html {
-    font-size: 22.5px;
+    font-size: 20.55385093px;
   }
 }
 @media screen and (min-width: 375px) {
   html {
-    font-size: 23.4375px;
+    font-size: 21.41026139px;
   }
 }
 @media screen and (min-width: 384px) {
   html {
-    font-size: 24px;
+    font-size: 21.92410766px;
   }
 }
 @media screen and (min-width: 400px) {
   html {
-    font-size: 25px;
+    font-size: 22.83761215px;
   }
 }
 @media screen and (min-width: 414px) {
   html {
-    font-size: 25.875px;
+    font-size: 23.875px;
   }
 }
 @media screen and (min-width: 480px) {
   html {
-    font-size: 30px;
+    font-size: 27.40513458px;
   }
 }
 @media screen and (min-width: 540px) {
   html {
-    font-size: 33.75px;
+    font-size: 30.8307764px;
   }
 }
 @media screen and (min-width: 720px) {
   html {
-    font-size: 45px;
+    font-size: 41.10770187px;
   }
 }
 @media screen and (min-width: 780px) {
   html {
-    font-size: 48.75px;
+    font-size: 44.53334369px;
   }
 }
 @media screen and (min-width: 992px) {
   html {
-    font-size: 62px;
+    font-size: 56.63727813px;
   }
 }
 @media screen and (min-width: 1170px) {
   html {
-    font-size: 73.125px;
+    font-size: 66.80001554px;
   }
 }
 @media screen and (min-width: 1440px) {
   html {
-    font-size: 90px;
+    font-size: 82.21540374px;
   }
 }
 @media screen and (min-width: 1928px) {
@@ -258,6 +243,6 @@ html {
 }
 @media screen and (min-width: 2560px) {
   html {
-    font-size: 160px;
+    font-size: 146.16071775px;
   }
 }
