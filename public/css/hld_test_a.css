@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Microsoft YaHei Regular, Microsoft YaHei Regular-Regular;
+}
+
+.big_box {
+    margin-top: -5%;
+}
+
+.cx_title p {
+    text-indent: 2em;
+    font-size: 0.26rem;
+    font-weight: bold;
+    text-align: left;
+    color: #797a7b;
+    line-height: 0.6rem;
+    padding: 0 1.5rem;
+}
+
+.big_box {
+    background: rgba(248, 248, 248, 0.6);
+    opacity: 1;
+}
+
+.part {
+    text-align: center;
+}
+
+.part p {
+    font-size: 0.32rem;
+    font-weight: 400;
+    color: #0069aa;
+    margin: 0.6rem auto 0.4rem;
+}
+
+.title {
+    font-size: 0.37rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    color: #222222;
+}
+
+.row {
+    width: 53px;
+    height: 2px;
+    opacity: 0.5;
+    background: #b1aeae;
+    margin: 0.6rem auto;
+}
+
+.hld-detail p {
+    padding: 0 3.78rem;
+    font-size: 0.24rem;
+    font-weight: 400;
+    text-align: center;
+    color: #222222;
+}
+
+.hld-detail span {
+    color: red;
+}
+
+.cx_form {
+    width: 14rem;
+    height: 9.36rem;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0px 2px 18px 0px rgba(32,32,32,0.07);
+    margin: 1.3rem auto;
+    padding: 0.3rem 2rem;
+}
+.topic {
+    margin: 0 auto;
+}
+td {
+    text-align: center;
+}
+.cx_form h4 {
+    font-size: 0.3rem;
+    font-weight: bold;
+    text-align: center !important;
+    color: #797a7b;
+    letter-spacing: 0.2rem;
+}
+thead tr {
+    background: #e8f0f7;
+}
+thead tr td {
+    font-size: 0.16rem;
+    font-weight: 700;
+    color: #333333;
+}
+tbody tr:nth-of-type(even) {
+    height: 0.61rem;
+    background: #f5f5f5;
+}
+tbody td {
+    font-size: 0.16rem;
+    font-weight: 400;
+    color: #333333;
+}
+table td:nth-of-type(odd) {
+    text-align: left;
+    padding-left: 0.2rem;
+}

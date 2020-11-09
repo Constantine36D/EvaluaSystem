@@ -141,4 +141,6 @@ function tcp() {
 }
 
 
-
+function hld() {
+    window.location.href = "hld_common.html"
+}
