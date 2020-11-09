@@ -63,6 +63,10 @@ form td {
 .topic_btn a:last-child {
   margin-left: 1.08rem;
 }
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+  margin-top: 50%;
+}
 html {
   font-size: 100px;
 }
@@ -146,7 +150,30 @@ html {
     font-size: 146.16071775px;
   }
 }
+@media screen and (max-width: 768px) {
+  .lun_div .carousel-inner .lun_content {
+    line-height: 0.35rem;
+  }
+  .carousel-control .glyphicon-chevron-left,
+  .carousel-control .glyphicon-chevron-right {
+    margin-top: 60%;
+  }
+}
 @media screen and (max-width: 425px) {
+  .lun_div {
+    top: 4.08rem;
+    margin-left: 6rem;
+  }
+  .lun_div .carousel-inner .lun_content {
+    display: inline-block;
+    width: 7.9rem;
+    height: 60px;
+    overflow: hidden;
+    overflow-y: scroll;
+    font-size: 12px;
+    text-align: center;
+    line-height: 0.8rem;
+  }
   .header_title .qz_mark {
     width: 3.5rem;
     height: 20px;
@@ -158,6 +185,16 @@ html {
   .cx_form table td {
     padding: 1rem 0;
   }
+  form th {
+    line-height: 0.6rem;
+  }
+  .carousel-control .glyphicon-chevron-left,
+  .carousel-control .glyphicon-chevron-right {
+    margin-top: 90%;
+  }
+  .lun_div .carousel-control .glyphicon-chevron-right {
+    right: -6%;
+  }
 }
 @media screen and (max-width: 320px) {
   .cx_form table td {
@@ -168,5 +205,8 @@ html {
     width: 10rem;
     font-weight: 100;
     word-wrap: break-word;
+  }
+  form th {
+    line-height: 0.9rem;
   }
 }
