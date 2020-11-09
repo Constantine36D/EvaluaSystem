@@ -1,27 +1,75 @@
 window.onload = function () {
+
+  // 每个下边栏分数计算
+  var common_score =6
+  $(".one table tbody tr:last-child>td:last-child").text("0分");
+  $(".one input:radio").click(function(){
+     $(".one table tbody tr:last-child>td:last-child").text($('.one  input:radio:checked').length *common_score+"分");
+     
+
+  })
+  $(".two table tbody tr:last-child>td:last-child").text("0分");
+  $(".two input:radio").click(function(){
+     $(".two table tbody tr:last-child>td:last-child").text($('.two  input:radio:checked').length *common_score+"分");
+  })
+  $(".three table tbody tr:last-child>td:last-child").text("0分");
+  $(".three input:radio").click(function(){
+     $(".three table tbody tr:last-child>td:last-child").text($('.three  input:radio:checked').length *common_score+"分");
+  })
+  $(".four table tbody tr:last-child>td:last-child").text("0分");
+  $(".four input:radio").click(function(){
+     $(".four table tbody tr:last-child>td:last-child").text($('.four  input:radio:checked').length *common_score+"分");
+  })
+  $(".five table tbody tr:last-child>td:last-child").text("0分");
+  $(".five input:radio").click(function(){
+     $(".five table tbody tr:last-child>td:last-child").text($('.five  input:radio:checked').length *common_score+"分");
+  })
+  $(".six table tbody tr:last-child>td:last-child").text("0分");
+  $(".six input:radio").click(function(){
+     $(".six table tbody tr:last-child>td:last-child").text($('.six  input:radio:checked').length *common_score+"分");
+  })
+  
  // 先统计上个部分：“第三部分”的各个部分分数
  var  three_count =window.location.href.split("&")
 
     atijiao = function () {
+      if ($('.one  input:radio:checked').length  <= 0) {
+
+        alert("至少选择一个┗|｀O′|┛ 嗷~~！！！")
+        return false
+    }
+    else{
+      
       $(".one").hide()
-      $(".two").show()
+        $(".two").show()
   
+    }
   
   
     }
     btijiao = function () {
-      $(".two").css('display', 'none')
-      $(".three").css('display', 'block')
-  
+      if ($('.two  input:radio:checked').length  <= 0) {
+        alert("至少选择一个┗|｀O′|┛ 嗷~~！！！")
+          return false
+      }
+      else{
+        $(".two").css('display', 'none')
+        $(".three").css('display', 'block')
+      }
     }
     bsyz = function () {
       $(".two").css('display', 'none')
       $(".one").css('display', 'block')
     }
     cxyz = function () {
-      $(".three").css('display', 'none')
-      $(".four").css('display', 'block')
-    }
+      if ($('.three  input:radio:checked').length  <= 0) {
+        alert("至少选择一个┗|｀O′|┛ 嗷~~！！！")
+          return false
+      }
+      else{
+        $(".three").css('display', 'none')
+        $(".four").css('display', 'block')}
+      }
     csyz = function () {
       $(".three").css('display', 'none')
       $(".two").css('display', 'block')
@@ -31,23 +79,37 @@ window.onload = function () {
       $(".three").css('display', 'block')
     }
     dxyz = function () {
-      $(".four").css('display', 'none')
-      $(".five").css('display', 'block')
-    }
+      if ($('.four  input:radio:checked').length  <= 0) {
+        alert("至少选择一个┗|｀O′|┛ 嗷~~！！！")
+          return false
+      }
+      else{
+        $(".four").css('display', 'none')
+        $(".five").css('display', 'block')}
+      }
     esyz = function () {
       $(".five").css('display', 'none')
       $(".four").css('display', 'block')
     }
     exyz = function () {
-      $(".five").css('display', 'none')
-      $(".six").css('display', 'block')
-    }
+      if ($('.five  input:radio:checked').length  <= 0) {
+        alert("至少选择一个┗|｀O′|┛ 嗷~~！！！")
+          return false
+      }
+      else{
+        $(".five").css('display', 'none')
+        $(".six").css('display', 'block')}
+      }
     fsyz = function () {
       $(".six").css('display', 'none')
       $(".five").css('display', 'block')
     }
     ftijiao = function () {
-  
+      if ($('.six  input:radio:checked').length  <= 0) {
+        alert("至少选择一个┗|｀O′|┛ 嗷~~！！！")
+          return false
+      }
+      else{
       // 算分开始
       // R型      
       var R_score = Number(three_count[1].split("=")[1])
@@ -82,5 +144,6 @@ window.onload = function () {
    console.log(" C型",C_score);
    window.location.href="hld_E.html?&"+"R="+R_score+"&A="+A_score+"&I="+I_score+"&S="+S_score+"&E="+E_score+"&C="+C_score
     }
+  }
   
   }
