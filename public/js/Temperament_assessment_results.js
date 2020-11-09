@@ -36,3 +36,6 @@ $(document).ready(function() {
 
     })
 
+function fanhui() {
+    window.location.href = "test-home-page.html";
+}
