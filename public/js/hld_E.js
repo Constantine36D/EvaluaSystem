@@ -22,6 +22,12 @@ $(function () {
 
     // 点击下一项按钮
     $(".next_btn").click(function () {
+        // console.log($("table:nth-child" + "(" + String(next_click_count) + ")" + "  input:radio:checked").length);
+        if ($("table:nth-child" + "(" + String(next_click_count) + ")" + "  input:radio:checked").length < 6) {
+            alert("每一列都要选一个┗|｀O′|┛ 嗷~~！！！")
+            return false
+        }
+        
         next_click_count++
         if (next_click_count <= 2 ) {
 
