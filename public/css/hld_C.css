@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
 }
-
+form th::after {
+    content: "";
+    color: red;
+}
 .header_title .qz_mark {
     width: 2.6rem;
     word-break: break-all;
@@ -10,6 +13,10 @@
 }
 .one {
     display: block;
+}
+
+th,td {
+    text-align: center!important;
 }
 
 @media screen and (max-width: 600px) {

@@ -29,7 +29,7 @@ $(function () {
 
 
     // 每个下边栏分数计算
-    var common_score = 6
+    var common_score = 1
 
     // 更换对应的分数
     $("table:nth-child" + "(" + String(next_click_count) + ")" + "  tbody tr:last-child>td:last-child").text("0分");
@@ -39,13 +39,13 @@ $(function () {
     })
     // 点击下一项按钮
     $(".next_btn").click(function () {
-        if ($("table:nth-child" + "(" + String(next_click_count) + ")" + "  input:radio:checked").length <= 0) {
-            alert("至少选择一个┗|｀O′|┛ 嗷~~！！！")
-            return false
-        }
+        // if ($("table:nth-child" + "(" + String(next_click_count) + ")" + "  input:radio:checked").length <= 0) {
+        //     alert("至少选择一个┗|｀O′|┛ 嗷~~！！！")
+        //     return false
+        // }
         next_click_count++
         if (next_click_count <= 6) {
-            var common_score = 6
+            var common_score = 1
             $("table").eq(next_click_count - 2).hide()
             $("table").eq(next_click_count - 1).show()
             $(".input_in h2").html("题 目 " + next_click_count + "/6")
@@ -58,9 +58,9 @@ $(function () {
         } else {
 
             // 算分开始
-            // R型      
+            // R型
             var R_score = Number(second_count[1].split("=")[1])
-            var common_score = 6;
+            var common_score = 1;
             var R_check_length = $('table:nth-child(1) input:radio:checked').length
             R_score += R_check_length * common_score
             console.log(" R型", R_score);

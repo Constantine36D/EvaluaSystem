@@ -42,6 +42,10 @@
     }
 }
 
+tbody td span {
+    padding-left: 0.2rem!important;
+}
+
 section {
     position: relative;
     width: 100%;

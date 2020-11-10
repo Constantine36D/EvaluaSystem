@@ -38,13 +38,24 @@ $(document).ready(function (){
             console.log(data)
             if (data.code == 200){
                 let Str = ''
-                Str = `
+                if (data.data.length == 0){
+                    Str = `
+                    <p> 测评结果显示<br>
+                您属于 RIA 型人才<br>
+                适合的职业为：<br>
+                牙科技术员、陶工、建筑设计员、模型工、细木工、制作链条人员。
+            </p>
+                    `
+                }else {
+                    Str = `
             <p> 测评结果显示<br>
                 您属于 ${data.data[0].type} 型人才<br>
                 适合的职业为：<br>
                 ${data.data[0].info}
             </p>
             `
+                }
+
            $('#jieguo').empty();
            $('#jieguo').append(Str);
             }
