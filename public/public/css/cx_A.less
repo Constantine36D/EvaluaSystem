@@ -1,0 +1,136 @@
+html{
+    font-size: 100px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+@no:100;
+.title{
+    text-align: center;
+    font-size: 30rem/@no;
+font-weight: bold;
+color: #000000;
+line-height: 50rem/@no;
+letter-spacing: 16rem/@no;
+}
+.cx_form{
+    text-align: left !important;
+}
+form table{
+    // margin: 0 auto;
+    margin-top: 65rem/@no;
+    // margin-left: 400rem/@no;
+}
+form tr{
+    margin-top: 44rem/@no;
+}
+form tr:nth-child(even){
+    margin-bottom: 71rem/@no !important;
+}
+form th::after{
+    content: "*";
+    color: red;
+}
+form th{
+    margin-top: 74rem/@no !important;
+    font-size: 24rem/@no;
+height: 26rem/@no;
+font-family: Microsoft YaHei Regular, Microsoft YaHei Regular-Regular;
+// font-weight: bold;
+color: #000000;
+line-height: 50rem/@no;
+letter-spacing: 1px;
+}
+form td{
+    padding: 5rem/@no 0;
+    width:382rem/@no;
+font-size: 16rem/@no;
+color: #000000;
+line-height: 50rem/@no;
+letter-spacing: 1rem/@no;
+font-weight: bold;
+}
+.topic_btn {
+    text-align: center;
+    margin-bottom: 80px;
+    a {
+        width: 133rem/@no;
+        height: 47rem/@no;
+        background: #38a1e3;
+        border-radius: 21px;
+        font-size: 18rem/@no;
+        color: #fff;
+        padding: 13rem/@no 35rem/@no ;
+
+    }
+
+    a:last-child {
+        margin-left: 108rem/@no;
+    }
+}
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right{
+
+    margin-top: 50%;
+}
+@import "common";
+@media screen and (max-width:768px){
+    .lun_div .carousel-inner .lun_content {
+        line-height: 0.35rem;}
+        .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right{
+
+            margin-top: 60%;
+        }
+}
+@media screen and (max-width:425px){
+    .lun_div {
+        top: 4.08rem;
+        margin-left: 6rem;
+    }
+    .lun_div .carousel-inner .lun_content {
+        display: inline-block;
+        width: 7.9rem;
+        height: 60px;
+        overflow: hidden;
+        overflow-y: scroll;
+        font-size: 12px;
+        text-align: center;
+        line-height: 0.8rem;
+    }
+   
+    .header_title .qz_mark {
+        width: 350rem/@no;
+        height: 20px;
+        line-height: 20px;
+
+    }
+    .cx_title p{
+        line-height:100rem/@no ;
+    }
+    .cx_form  table td{
+        padding: 100rem/@no 0  ;
+    }
+    form th {
+        line-height: 0.6rem;
+} .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right{
+
+    margin-top: 90%;
+}
+.lun_div .carousel-control .glyphicon-chevron-right {
+    right: -6%;
+}
+
+}
+@media screen and (max-width:320px){
+    .cx_form  table td{
+        padding: 100rem/@no  0 ;
+        font-size: 12px;
+        overflow: hidden;
+        word-break: break-all;
+        width: 10rem;
+        font-weight: 100;
+        word-wrap: break-word;
+    }
+form th {
+    line-height: 0.9rem;}
+}

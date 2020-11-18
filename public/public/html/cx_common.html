@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>气质测评页面</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/cx_common.css">
+    <link rel="stylesheet" href="../css/cx_A.css">
+
+</head>
+
+<body>
+
+    <!-- logo -->
+    <div class="logo">
+        <img src="../icon/icon/xhlog.png">
+    </div>
+    <!-- 头部 ：成都东软标题 -->
+    <!-- 头部背景图 -->
+    <div class="header_title">
+        成都东软学院 <br>
+        职业测评
+        <div class="qz_mark">气质测评</div>
+    </div>
+    <div class="bg_img">
+        <img src="../icon/icon/tmback.png">
+    </div>
+    <!-- 头部按钮：登陆 -->
+
+    <div class="lun_div">
+        <div id="myCarousel" class="carousel slide">
+            <!-- 轮播（Carousel）指标 -->
+            <!-- <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>    -->
+            <!-- 轮播（Carousel）项目 -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="../icon/icon/zahngfei.jpg" alt="First slide">
+                    <div class="lun_content">
+                        <sapn> 胆汁质主要表现为：情绪粗犷、精力旺盛，决策果断，动作迅速 率直热情，性情暴躁，脾气倔强，易粗心、易冲动、内心外露、不灵活。</sapn>
+                        <br><span>代表人物：张飞</span>
+                        <br>
+                        <sapn>性格分析：易被激怒、冲动、暴躁、不可遏制、发泄找出气筒、起伏大、情绪易失控</sapn>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../icon/icon/ldy.jpg" alt="First slide">
+                    <div class="lun_content">
+                        <sapn> 抑郁质主要表现为：多愁善感、感情细腻、观察敏锐，见微知著，谨慎多疑；体验深刻但外部表现不强烈，行动迟缓；柔弱易倦，办事不果断，缺乏信心；孤僻迟疑内倾明显 </sapn>
+                        <br><span>代表人物：林黛玉</span>
+                        <br>
+                        <sapn>性格分析:细心、想象力丰富、情绪深刻、多疑、孤僻、忧闷、怯懦、反应慢、动作迟缓、说话慢慢吞吞、多愁善感</sapn>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../icon/icon/wxf.jpg" alt="First slide">
+                    <div class="lun_content">
+                        <sapn> 多血质主要表现为：情绪丰富、敏捷好动、乐观亲切、善交际、不拘束、易适应环境、能力强、效率高，能从事多样化、多变性的工作、情绪发生快而多变、灵活有朝气，浮躁轻率 </sapn>
+                        <br><span>代表人物：王熙凤</span>
+                        <br>
+                        <sapn>性格分析:有朝气、热情、活泼、爱交际、有同情心、思想灵活、变化无常、粗枝大叶、浮躁、注意力容易转移、兴趣和情感易变换</sapn>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../icon/icon/xbc.jpg" alt="First slide">
+                    <div class="lun_content">
+                        <sapn>粘液质主要表现为：情绪贫乏、性情沉稳冷淡，思维言语动作迟缓；深谋远虑、坚毅、有原则、交际适度；自力强，内心少外露，感受性较低，耐受性较高，内倾明显 </sapn>
+                        <br><span>代表人物：薛宝钗</span>
+                        <br>
+                        <sapn>性格分析:自制、镇定、踏实、冷淡、迟缓、固执反应性低、情感不易发生，不外露心理反应缓慢，遇事不慌不忙，可塑性差，表现为不够灵活。
+                        </sapn>
+
+                    </div>
+                </div>
+            </div>
+            <!-- 轮播（Carousel）导航 -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+                <img class="glyphicon glyphicon-chevron-left" src="../icon/icon/left .png" alt="">
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+
+                <span class="sr-only">Next</span>
+                <img class="glyphicon glyphicon-chevron-right" src="../icon/icon/right.png" alt="">
+            </a>
+        </div>
+    </div>
+
+
+    <div class="big_box">
+        <div class="cx_title">
+            <p>下面气质测评60道题可以帮助你大致确定自己的气质类型。在回答这些问题时，要实事求是怎样想的，怎样做的
+                就怎样填写。看清题目以后，你认为很符合自己情况的记 <span>2</span> 分；比较符合的记<span> 1 </span> 分；介于符合不符合之间记<span> 0 </span>分；
+                比较不符合的记 <span>-1 </span>分；完全不符合记<span>-2 </span> 分。</p>
+        </div>
+
+        <!-- 切换题目组 -->
+        <div class="topic" class="allzhi">
+            <form class="allinformation">
+                <div class="one">
+                    <div class="title">A组题目1/4</div>
+                    <div class="cx_form ">
+                        <form action="" class="oneform">
+                            <table id="onetable">
+                                <tr>
+                                    <th colspan="4">1. 遇到可气的事就怒不可遏，想把心理话全说出来才痛快。</th>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="at1" value="2"> 很符合</td>
+                                    <td><input type="radio" name="at1" value="1"> 比较符合</td>
+                                    <td><input type="radio" name="at1" value="0"> 介于之间</td>
+                                    <td><input type="radio" name="at1" value="-1"> 比较不符合</td>
+                                    <td><input type="radio" name="at1" value="-2"> 完全不符合</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="4">2. 和人争吵时，总是先发制人，喜欢挑衅。</th>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="at2" value="2"> 很符合</td>
+                                    <td><input type="radio" name="at2" value="1"> 比较符合</td>
+                                    <td><input type="radio" name="at2" value="0"> 介于之间</td>
+                                    <td><input type="radio" name="at2" value="-1"> 比较不符合</td>
+                                    <td><input type="radio" name="at2" value="-2"> 完全不符合</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="4">3. 羡慕那些善于克制自己感情的人。</th>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="at3" value="2"> 很符合</td>
+                                    <td><input type="radio" name="at3" value="1"> 比较符合</td>
+                                    <td><input type="radio" name="at3" value="0"> 介于之间</td>
+                                    <td><input type="radio" name="at3" value="-1"> 比较不符合</td>
+                                    <td><input type="radio" name="at3" value="-2"> 完全不符合</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="4">4. 做事总是有旺盛的精力。</th>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="at4" value="2"> 很符合</td>
+                                    <td><input type="radio" name="at4" value="1"> 比较符合</td>
+                                    <td><input type="radio" name="at4" value="0"> 介于之间</td>
+                                    <td><input type="radio" name="at4" value="-1"> 比较不符合</td>
+                                    <td><input type="radio" name="at4" value="-2"> 完全不符合</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="4">5. 情绪高昂时，觉得干什么都有趣；情绪低落时，又觉得干什么都没意思。</th>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="at5" value="2"> 很符合</td>
+                                    <td><input type="radio" name="at5" value="1"> 比较符合</td>
+                                    <td><input type="radio" name="at5" value="0"> 介于之间</td>
+                                    <td><input type="radio" name="at5" value="-1"> 比较不符合</td>
+                                    <td><input type="radio" name="at5" value="-2"> 完全不符合</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="4">6. 对学习、工作、事业怀有很高的热情。</th>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="at6" value="2"> 很符合</td>
+                                    <td><input type="radio" name="at6" value="1"> 比较符合</td>
+                                    <td><input type="radio" name="at6" value="0"> 介于之间</td>
+                                    <td><input type="radio" name="at6" value="-1"> 比较不符合</td>
+                                    <td><input type="radio" name="at6" value="-2"> 完全不符合</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="4">7. 喜欢参加热烈的活动。</th>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="at7" value="2"> 很符合</td>
+                                    <td><input type="radio" name="at7" value="1"> 比较符合</td>
+                                    <td><input type="radio" name="at7" value="0"> 介于之间</td>
+                                    <td><input type="radio" name="at7" value="-1"> 比较不符合</td>
+                                    <td><input type="radio" name="at7" value="-2"> 完全不符合</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="4">8. 宁愿侃侃而谈，不愿窃窃私语。</th>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="at8" value="2"> 很符合</td>
+                                    <td><input type="radio" name="at8" value="1"> 比较符合</td>
+                                    <td><input type="radio" name="at8" value="0"> 介于之间</td>
+                                    <td><input type="radio" name="at8" value="-1"> 比较不符合</td>
+                                    <td><input type="radio" name="at8" value="-2"> 完全不符合</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="4">9. 认准一个目标就希望尽快实现，不达目的，誓不罢休。</th>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="at9" value="2"> 很符合</td>
+                                    <td><input type="radio" name="at9" value="1"> 比较符合</td>
+                                    <td><input type="radio" name="at9" value="0"> 介于之间</td>
+                                    <td><input type="radio" name="at9" value="-1"> 比较不符合</td>
+                                    <td><input type="radio" name="at9" value="-2"> 完全不符合</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="4">10. 做事有些莽撞，常常不考虑后果。</th>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="at10" value="2"> 很符合</td>
+                                    <td><input type="radio" name="at10" value="1"> 比较符合</td>
+                                    <td><input type="radio" name="at10" value="0"> 介于之间</td>
+                                    <td><input type="radio" name="at10" value="-1"> 比较不符合</td>
+                                    <td><input type="radio" name="at10" value="-2"> 完全不符合</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="4">11. 喜欢运动量大的剧烈活动，或参加各种文体活动。</th>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="at11" value="2"> 很符合</td>
+                                    <td><input type="radio" name="at11" value="1"> 比较符合</td>
+                                    <td><input type="radio" name="at11" value="0"> 介于之间</td>
+                                    <td><input type="radio" name="at11" value="-1"> 比较不符合</td>
+                                    <td><input type="radio" name="at11" value="-2"> 完全不符合</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="4">12. 爱看情节起伏跌宕、激动人心的小说。</th>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="at12" value="2"> 很符合</td>
+                                    <td><input type="radio" name="at12" value="1"> 比较符合</td>
+                                    <td><input type="radio" name="at12" value="0"> 介于之间</td>
+                                    <td><input type="radio" name="at12" value="-1"> 比较不符合</td>
+                                    <td><input type="radio" name="at12" value="-2"> 完全不符合</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="4">13. 和周围人们的关系总是相处不好。</th>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="at13" value="2"> 很符合</td>
+                                    <td><input type="radio" name="at13" value="1"> 比较符合</td>
+                                    <td><input type="radio" name="at13" value="0"> 介于之间</td>
+                                    <td><input type="radio" name="at13" value="-1"> 比较不符合</td>
+                                    <td><input type="radio" name="at13" value="-2"> 完全不符合</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="4">14. 别人说我“出语伤人”，可我并不觉得这样。</th>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="at14" value="2"> 很符合</td>
+                                    <td><input type="radio" name="at14" value="1"> 比较符合</td>
+                                    <td><input type="radio" name="at14" value="0"> 介于之间</td>
+                                    <td><input type="radio" name="at14" value="-1"> 比较不符合</td>
+                                    <td><input type="radio" name="at14" value="-2"> 完全不符合</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="4">15. 兴奋的事常常使我失眠。</th>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="at15" value="2"> 很符合</td>
+                                    <td><input type="radio" name="at15" value="1"> 比较符合</td>
+                                    <td><input type="radio" name="at15" value="0"> 介于之间</td>
+                                    <td><input type="radio" name="at15" value="-1"> 比较不符合</td>
+                                    <td><input type="radio" name="at15" value="-2"> 完全不符合</td>
+                                </tr>
+
+                            </table>
+                        </form>
+                    </div>
+                    <div class="topic_btn">
+                        <a onclick="atijiao()">下一组</a>
+
+                    </div>
+                </div>
+
+                <div class="two" style="display: none;">
+                    <div class="title">B组题目2/4</div>
+                    <div class="cx_form">
+                         <form>
+                        <table id="twotable">
+                            <tr>
+                                <th colspan="4">1. 到一个新环境很快就能适应。</th>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="bt1" value="2"> 很符合</td>
+                                <td><input type="radio" name="bt1" value="1"> 比较符合</td>
+                                <td><input type="radio" name="bt1" value="0"> 介于之间</td>
+                                <td><input type="radio" name="bt1" value="-1"> 比较不符合</td>
+                                <td><input type="radio" name="bt1" value="-2"> 完全不符合</td>
+                            </tr>
+                            <tr>
+                                <th colspan="4">2. 善于和人交往。</th>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="bt2" value="2"> 很符合</td>
+                                <td><input type="radio" name="bt2" value="1"> 比较符合</td>
+                                <td><input type="radio" name="bt2" value="0"> 介于之间</td>
+                                <td><input type="radio" name="bt2" value="-1"> 比较不符合</td>
+                                <td><input type="radio" name="bt2" value="-2"> 完全不符合</td>
+                            </tr>
+                            <tr>
+                                <th colspan="4">3. 在多数情况下情绪是乐观的。</th>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="bt3" value="2"> 很符合</td>
+                                <td><input type="radio" name="bt3" value="1"> 比较符合</td>
+                                <td><input type="radio" name="bt3" value="0"> 介于之间</td>
+                                <td><input type="radio" name="bt3" value="-1"> 比较不符合</td>
+                                <td><input type="radio" name="bt3" value="-2"> 完全不符合</td>
+                            </tr>
+                            <tr>
+                                <th colspan="4">4. 在人群中从不觉得过分拘束。</th>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="bt4" value="2"> 很符合</td>
+                                <td><input type="radio" name="bt4" value="1"> 比较符合</td>
+                                <td><input type="radio" name="bt4" value="0"> 介于之间</td>
+                                <td><input type="radio" name="bt4" value="-1"> 比较不符合</td>
+                                <td><input type="radio" name="bt4" value="-2"> 完全不符合</td>
+                            </tr>
+                            <tr>
+                                <th colspan="4">5. 理解问题总比别人快。</th>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="bt5" value="2"> 很符合</td>
+                                <td><input type="radio" name="bt5" value="1"> 比较符合</td>
+                                <td><input type="radio" name="bt5" value="0"> 介于之间</td>
+                                <td><input type="radio" name="bt5" value="-1"> 比较不符合</td>
+                                <td><input type="radio" name="bt5" value="-2"> 完全不符合</td>
+                            </tr>
+                            <tr>
+                                <th colspan="4">6. 符合兴趣的事情，干起来劲头十足，否则就不想干。</th>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="bt6" value="2"> 很符合</td>
+                                <td><input type="radio" name="bt6" value="1"> 比较符合</td>
+                                <td><input type="radio" name="bt6" value="0"> 介于之间</td>
+                                <td><input type="radio" name="bt6" value="-1"> 比较不符合</td>
+                                <td><input type="radio" name="bt6" value="-2"> 完全不符合</td>
+                            </tr>
+                            <tr>
+                                <th colspan="4">7. 讨厌做那种需要耐心、细致的工作。</th>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="bt7" value="2"> 很符合</td>
+                                <td><input type="radio" name="bt7" value="1"> 比较符合</td>
+                                <td><input type="radio" name="bt7" value="0"> 介于之间</td>
+                                <td><input type="radio" name="bt7" value="-1"> 比较不符合</td>
+                                <td><input type="radio" name="bt7" value="-2"> 完全不符合</td>
+                            </tr>
+                            <tr>
+                                <th colspan="4">8. 工作学习时间长了，常感到厌倦。</th>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="bt8" value="2"> 很符合</td>
+                                <td><input type="radio" name="bt8" value="1"> 比较符合</td>
+                                <td><input type="radio" name="bt8" value="0"> 介于之间</td>
+                                <td><input type="radio" name="bt8" value="-1"> 比较不符合</td>
+                                <td><input type="radio" name="bt8" value="-2"> 完全不符合</td>
+                            </tr>
+                            <tr>
+                                <th colspan="4">9. 疲倦时只要短暂的休息就能精神抖擞，重新投入工作。</th>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="bt9" value="2"> 很符合</td>
+                                <td><input type="radio" name="bt9" value="1"> 比较符合</td>
+                                <td><input type="radio" name="bt9" value="0"> 介于之间</td>
+                                <td><input type="radio" name="bt9" value="-1"> 比较不符合</td>
+                                <td><input type="radio" name="bt9" value="-2"> 完全不符合</td>
+                            </tr>
+                            <tr>
+                                <th colspan="4">10. 能够很快地忘记那些不愉快的事情。</th>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="b10" value="2"> 很符合</td>
+                                <td><input type="radio" name="bt10" value="1"> 比较符合</td>
+                                <td><input type="radio" name="bt10" value="0"> 介于之间</td>
+                                <td><input type="radio" name="bt10" value="-1"> 比较不符合</td>
+                                <td><input type="radio" name="bt10" value="-2"> 完全不符合</td>
+                            </tr>
+                            <tr>
+                                <th colspan="4">11. 接受一个任务后，就希望把它迅速解决。</th>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="bt11" value="2"> 很符合</td>
+                                <td><input type="radio" name="bt11" value="1"> 比较符合</td>
+                                <td><input type="radio" name="bt11" value="0"> 介于之间</td>
+                                <td><input type="radio" name="bt11" value="-1"> 比较不符合</td>
+                                <td><input type="radio" name="bt11" value="-2"> 完全不符合</td>
+                            </tr>
+                            <tr>
+                                <th colspan="4">12. 能够同时注意几件事物。</th>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="bt12" value="2"> 很符合</td>
+                                <td><input type="radio" name="bt12" value="1"> 比较符合</td>
+                                <td><input type="radio" name="bt12" value="0"> 介于之间</td>
+                                <td><input type="radio" name="bt12" value="-1"> 比较不符合</td>
+                                <td><input type="radio" name="bt12" value="-2"> 完全不符合</td>
+                            </tr>
+                            <tr>
+                                <th colspan="4">13. 希望做变化大、花样多的工作。。</th>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="bt13" value="2"> 很符合</td>
+                                <td><input type="radio" name="bt13" value="1"> 比较符合</td>
+                                <td><input type="radio" name="bt13" value="0"> 介于之间</td>
+                                <td><input type="radio" name="bt13" value="-1"> 比较不符合</td>
+                                <td><input type="radio" name="bt13" value="-2"> 完全不符合</td>
+                            </tr>
+                            <tr>
+                                <th colspan="4">14. 反应敏捷，头脑机敏。</th>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="bt14" value="2"> 很符合</td>
+                                <td><input type="radio" name="bt14" value="1"> 比较符合</td>
+                                <td><input type="radio" name="bt14" value="0"> 介于之间</td>
+                                <td><input type="radio" name="bt14" value="-1"> 比较不符合</td>
+                                <td><input type="radio" name="bt14" value="-2"> 完全不符合</td>
+                            </tr>
+                            <tr>
+                                <th colspan="4">15. 假如工作枯燥无味，马上就会情绪低落。</th>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="bt15" value="2"> 很符合</td>
+                                <td><input type="radio" name="bt15" value="1"> 比较符合</td>
+                                <td><input type="radio" name="bt15" value="0"> 介于之间</td>
+                                <td><input type="radio" name="bt15" value="-1"> 比较不符合</td>
+                                <td><input type="radio" name="bt15" value="-2"> 完全不符合</td>
+                            </tr>
+
+
+                        </table>
+                       </form>
+                    </div>
+                    <div class="topic_btn">
+                        <a onclick="bsyz()">上一组</a>
+                        <a onclick="btijiao()">下一组</a>
+
+
+                    </div>
+
+                </div>
+                <div class="three" style="display: none;">
+                    <div class="title">C组题目3/4</div>
+                    <div class="cx_form">
+                        <form>
+                        <table id="threetable">
+                            <tr>
+                                <th colspan="4">1. 做事力求稳妥，不做无把握的事。</th>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="ct1" value="2"> 很符合</td>
+                                <td><input type="radio" name="ct1" value="1"> 比较符合</td>
+                                <td><input type="radio" name="ct1" value="0"> 介于之间</td>
+                                <td><input type="radio" name="ct1" value="-1"> 比较不符合</td>
+                                <td><input type="radio" name="ct1" value="-2"> 完全不符合</td>
+                            </tr>
+                            <tr>
+                                <th colspan="4">2. 喜欢安静的环境。</th>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="ct2" value="2"> 很符合</td>
+                                <td><input type="radio" name="ct2" value="1"> 比较符合</td>
+                                <td><input type="radio" name="ct2" value="0"> 介于之间</td>
+                                <td><input type="radio" name="ct2" value="-1"> 比较不符合</td>
+                                <td><input type="radio" name="ct2" value="-2"> 完全不符合</td>
+                            </tr>
+                            <tr>
+                                <th colspan="4">3. 生活有规律，很少违反作息制度。</th>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="ct3" value="2"> 很符合</td>
+                                <td><input type="radio" name="ct3" value="1"> 比较符合</td>
+                                <td><input type="radio" name="ct3" value="0"> 介于之间</td>
+                                <td><input type="radio" name="ct3" value="-1"> 比较不符合</td>
+                                <td><input type="radio" name="ct3" value="-2"> 完全不符合</td>
+                            </tr>
+
+                            <tr>
+                                <th colspan="4">4. 遇到令人气愤的事，能很好地自我克制。</th>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="ct4" value="2"> 很符合</td>
+                                <td><input type="radio" name="ct4" value="1"> 比较符合</td>
+                                <td><input type="radio" name="ct4" value="0"> 介于之间</td>
+                                <td><input type="radio" name="ct4" value="-1"> 比较不符合</td>
+                                <td><input type="radio" name="ct4" value="-2"> 完全不符合</td>
+                            </tr>
+                            <tr>
+                                <th colspan="4">5. 当注意力集中于一事物时，别的事物就很难使我分心。</th>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="ct5" value="2"> 很符合</td>
+                                <td><input type="radio" name="ct5" value="1"> 比较符合</td>
+                                <td><input type="radio" name="ct5" value="0"> 介于之间</td>
+                                <td><input type="radio" name="ct5" value="-1"> 比较不符合</td>
+                                <td><input type="radio" name="ct5" value="-2"> 完全不符合</td>
+                            </tr>
+                            <tr>
+                                <th colspan="4">6. 能够长时间做枯躁、单调的工作。</th>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="ct6" value="2"> 很符合</td>
+                                <td><input type="radio" name="ct6" value="1"> 比较符合</td>
+                                <td><input type="radio" name="ct6" value="0"> 介于之间</td>
+                                <td><input type="radio" name="ct6" value="-1"> 比较不符合</td>
+                                <td><input type="radio" name="ct6" value="-2"> 完全不符合</td>
+                            </tr>
+                            <tr>
+                                <th colspan="4">7. 与人交往不卑不亢。</th>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="ct7" value="2"> 很符合</td>
+                                <td><input type="radio" name="ct7" value="1"> 比较符合</td>
+                                <td><input type="radio" name="ct7" value="0"> 介于之间</td>
+                                <td><input type="radio" name="ct7" value="-1"> 比较不符合</td>
+                                <td><input type="radio" name="ct7" value="-2"> 完全不符合</td>
+                            </tr>
+                            <tr>
+                                <th colspan="4">8. 不喜欢长时间谈论一个问题，愿意实际动手干。</th>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="ct8" value="2"> 很符合</td>
+                                <td><input type="radio" name="ct8" value="1"> 比较符合</td>
+                                <td><input type="radio" name="ct8" value="0"> 介于之间</td>
+                                <td><input type="radio" name="ct8" value="-1"> 比较不符合</td>
+                                <td><input type="radio" name="ct8" value="-2"> 完全不符合</td>
+                            </tr>
+                            <tr>
+                                <th colspan="4">9. 理解问题时常比别人慢些。</th>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="ct9" value="2"> 很符合</td>
+                                <td><input type="radio" name="ct9" value="1"> 比较符合</td>
+                                <td><input type="radio" name="ct9" value="0"> 介于之间</td>
+                                <td><input type="radio" name="ct9" value="-1"> 比较不符合</td>
+                                <td><input type="radio" name="ct9" value="-2"> 完全不符合</td>
+                            </tr>
+                            <tr>
+                                <th colspan="4">10. 别人讲授新知识、技术时，总希望他讲慢些，多重复几遍。</th>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="ct10" value="2"> 很符合</td>
+                                <td><input type="radio" name="ct10" value="1"> 比较符合</td>
+                                <td><input type="radio" name="ct10" value="0"> 介于之间</td>
+                                <td><input type="radio" name="ct10" value="-1"> 比较不符合</td>
+                                <td><input type="radio" name="ct10" value="-2"> 完全不符合</td>
+                            </tr>
+                            <tr>
+                                <th colspan="4">11. 不能很快地把注意力从一件事转移到别一件事上去。</th>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="ct11" value="2"> 很符合</td>
+                                <td><input type="radio" name="ct11" value="1"> 比较符合</td>
+                                <td><input type="radio" name="ct11" value="0"> 介于之间</td>
+                                <td><input type="radio" name="ct11" value="-1"> 比较不符合</td>
+                                <td><input type="radio" name="ct11" value="-2"> 完全不符合</td>
+                            </tr>
+                            <tr>
+                                <th colspan="4">12. 认为墨守成规比冒风险强些。</th>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="ct12" value="2"> 很符合</td>
+                                <td><input type="radio" name="ct12" value="1"> 比较符合</td>
+                                <td><input type="radio" name="ct12" value="0"> 介于之间</td>
+                                <td><input type="radio" name="ct12" value="-1"> 比较不符合</td>
+                                <td><input type="radio" name="ct12" value="-2"> 完全不符合</td>
+                            </tr>
+                            <tr>
+                                <th colspan="4">13. 对工作抱认真严谨，始终如一的态度。</th>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="ct13" value="2"> 很符合</td>
+                                <td><input type="radio" name="ct13" value="1"> 比较符合</td>
+                                <td><input type="radio" name="ct13" value="0"> 介于之间</td>
+                                <td><input type="radio" name="ct13" value="-1"> 比较不符合</td>
+                                <td><input type="radio" name="ct13" value="-2"> 完全不符合</td>
+                            </tr>
+                            <tr>
+                                <th colspan="4">14. 在学习活动中，常因反应慢而落后。</th>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="ct14" value="2"> 很符合</td>
+                                <td><input type="radio" name="ct14" value="1"> 比较符合</td>
+                                <td><input type="radio" name="ct14" value="0"> 介于之间</td>
+                                <td><input type="radio" name="ct14" value="-1"> 比较不符合</td>
+                                <td><input type="radio" name="ct14" value="-2"> 完全不符合</td>
+                            </tr>
+                            <tr>
+                                <th colspan="4">15. 喜欢有条理而不甚麻烦的工作。</th>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="ct15" value="2"> 很符合</td>
+                                <td><input type="radio" name="ct15" value="1"> 比较符合</td>
+                                <td><input type="radio" name="ct15" value="0"> 介于之间</td>
+                                <td><input type="radio" name="ct15" value="-1"> 比较不符合</td>
+                                <td><input type="radio" name="ct15" value="-2"> 完全不符合</td>
+                            </tr>
+
+                        </table>
+                    </form>
+                        <div class="topic_btn">
+                            <a onclick="csyz()">上一组</a>
+                            <a onclick="cxyz()">下一组</a>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="four" style="display:none;">
+                    <div class="title">D组题目4/4</div>
+                    <div class="cx_form">
+                        <form>
+                        <table id="fourtable">
+                            <tr>
+                                <th colspan="4">1. 宁可一个人干事，不愿很多人在一起。</th>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="dt1" value="2"> 很符合</td>
+                                <td><input type="radio" name="dt1" value="1"> 比较符合</td>
+                                <td><input type="radio" name="dt1" value="0"> 介于之间</td>
+                                <td><input type="radio" name="dt1" value="-1"> 比较不符合</td>
+                                <td><input type="radio" name="dt1" value="-2"> 完全不符合</td>
+                            </tr>
+                            <tr>
+                                <th colspan="4">2. 厌恶那些强烈的刺激，如尖叫、噪音、危险镜头等。</th>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="dt2" value="2"> 很符合</td>
+                                <td><input type="radio" name="dt2" value="1"> 比较符合</td>
+                                <td><input type="radio" name="dt2" value="0"> 介于之间</td>
+                                <td><input type="radio" name="dt2" value="-1"> 比较不符合</td>
+                                <td><input type="radio" name="dt2" value="-2"> 完全不符合</td>
+                            </tr>
+                            <tr>
+                                <th colspan="4">3. 碰到陌生人觉得很拘束。</th>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="dt3" value="2"> 很符合</td>
+                                <td><input type="radio" name="dt3" value="1"> 比较符合</td>
+                                <td><input type="radio" name="dt3" value="0"> 介于之间</td>
+                                <td><input type="radio" name="dt3" value="-1"> 比较不符合</td>
+                                <td><input type="radio" name="dt3" value="-2"> 完全不符合</td>
+                            </tr>
+                            <tr>
+                                <th colspan="4">4. 遇到问题常常举棋不定，优柔寡断。</th>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="dt4" value="2"> 很符合</td>
+                                <td><input type="radio" name="dt4" value="1"> 比较符合</td>
+                                <td><input type="radio" name="dt4" value="0"> 介于之间</td>
+                                <td><input type="radio" name="dt4" value="-1"> 比较不符合</td>
+                                <td><input type="radio" name="dt4" value="-2"> 完全不符合</td>
+                            </tr>
+                            <tr>
+                                <th colspan="4">5. 碰到危险情景时，常有一种极度恐怖感。</th>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="dt5" value="2"> 很符合</td>
+                                <td><input type="radio" name="dt5" value="1"> 比较符合</td>
+                                <td><input type="radio" name="dt5" value="0"> 介于之间</td>
+                                <td><input type="radio" name="dt5" value="-1"> 比较不符合</td>
+                                <td><input type="radio" name="dt5" value="-2"> 完全不符合</td>
+                            </tr>
+                            <tr>
+                                <th colspan="4">6. 一点小事就能引起情绪波动。</th>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="dt6" value="2"> 很符合</td>
+                                <td><input type="radio" name="dt6" value="1"> 比较符合</td>
+                                <td><input type="radio" name="dt6" value="0"> 介于之间</td>
+                                <td><input type="radio" name="dt6" value="-1"> 比较不符合</td>
+                                <td><input type="radio" name="dt6" value="-2"> 完全不符合</td>
+                            </tr>
+                            <tr>
+                                <th colspan="4">7. 爱看感情细腻、描写人物心理活动的文学作品。</th>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="dt7" value="2"> 很符合</td>
+                                <td><input type="radio" name="dt7" value="1"> 比较符合</td>
+                                <td><input type="radio" name="dt7" value="0"> 介于之间</td>
+                                <td><input type="radio" name="dt7" value="-1"> 比较不符合</td>
+                                <td><input type="radio" name="dt7" value="-2"> 完全不符合</td>
+                            </tr>
+                            <tr>
+                                <th colspan="4">8. 别人说我总是闷闷不乐</th>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="dt8" value="2"> 很符合</td>
+                                <td><input type="radio" name="dt8" value="1"> 比较符合</td>
+                                <td><input type="radio" name="dt8" value="0"> 介于之间</td>
+                                <td><input type="radio" name="dt8" value="-1"> 比较不符合</td>
+                                <td><input type="radio" name="dt8" value="-2"> 完全不符合</td>
+                            </tr>
+                            <tr>
+                                <th colspan="4">9. 心里有事，宁愿自己想，不愿说出来。</th>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="dt9" value="2"> 很符合</td>
+                                <td><input type="radio" name="dt9" value="1"> 比较符合</td>
+                                <td><input type="radio" name="dt9" value="0"> 介于之间</td>
+                                <td><input type="radio" name="dt9" value="-1"> 比较不符合</td>
+                                <td><input type="radio" name="dt9" value="-2"> 完全不符合</td>
+                            </tr>
+                            <tr>
+                                <th colspan="4">10. 同样和别人学习、工作一段时间后，常比别更疲倦。</th>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="dt10" value="2"> 很符合</td>
+                                <td><input type="radio" name="dt10" value="1"> 比较符合</td>
+                                <td><input type="radio" name="dt10" value="0"> 介于之间</td>
+                                <td><input type="radio" name="dt10" value="-1"> 比较不符合</td>
+                                <td><input type="radio" name="dt10" value="-2"> 完全不符合</td>
+                            </tr>
+                            <tr>
+                                <th colspan="4">11. 做作业或完成一件工作总比别人花的时间多。</th>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="dt11" value="2"> 很符合</td>
+                                <td><input type="radio" name="dt11" value="1"> 比较符合</td>
+                                <td><input type="radio" name="dt11" value="0"> 介于之间</td>
+                                <td><input type="radio" name="dt11" value="-1"> 比较不符合</td>
+                                <td><input type="radio" name="dt11" value="-2"> 完全不符合</td>
+                            </tr>
+                            <tr>
+                                <th colspan="4">12. 当我烦闷的时候，别人很难使我高兴起来。</th>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="dt12" value="2"> 很符合</td>
+                                <td><input type="radio" name="dt12" value="1"> 比较符合</td>
+                                <td><input type="radio" name="dt12" value="0"> 介于之间</td>
+                                <td><input type="radio" name="dt12" value="-1"> 比较不符合</td>
+                                <td><input type="radio" name="dt12" value="-2"> 完全不符合</td>
+                            </tr>
+                            <tr>
+                                <th colspan="4">13. 喜欢复习学过的重复做已经掌握的工作。</th>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="dt13" value="2"> 很符合</td>
+                                <td><input type="radio" name="dt13" value="1"> 比较符合</td>
+                                <td><input type="radio" name="dt13" value="0"> 介于之间</td>
+                                <td><input type="radio" name="dt13" value="-1"> 比较不符合</td>
+                                <td><input type="radio" name="dt13" value="-2"> 完全不符合</td>
+                            </tr>
+                            <tr>
+                                <th colspan="4">14. 小时候背的诗歌，我似乎比别人记得清楚。</th>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="dt14" value="2"> 很符合</td>
+                                <td><input type="radio" name="dt14" value="1"> 比较符合</td>
+                                <td><input type="radio" name="dt14" value="0"> 介于之间</td>
+                                <td><input type="radio" name="dt14" value="-1"> 比较不符合</td>
+                                <td><input type="radio" name="dt14" value="-2"> 完全不符合</td>
+                            </tr>
+                            <tr>
+                                <th colspan="4">15. 人讲许多新概念，我常常听不懂，但是弄懂 以后就很难忘记。</th>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="dt15" value="2"> 很符合</td>
+                                <td><input type="radio" name="dt15" value="1"> 比较符合</td>
+                                <td><input type="radio" name="dt15" value="0"> 介于之间</td>
+                                <td><input type="radio" name="dt15" value="-1"> 比较不符合</td>
+                                <td><input type="radio" name="dt15" value="-2"> 完全不符合</td>
+                            </tr>
+
+                        </table>
+                        </form>
+                        <div class="topic_btn">
+
+                            <a onclick="dsyz()">上一组</a>
+                            <a onclick="tijiao()">提交</a>
+
+
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+
+    </div>
+    </div>
+</body>
+<script src="../js/jquery-2.0.0.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/cx_common.js"></script>
+
+</html>

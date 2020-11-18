@@ -1,0 +1,26 @@
+.pre_read .pre_content {
+  padding-left: 10%;
+}
+.pre_read h1 {
+  font-size: 1.85rem;
+}
+.pre_read p {
+  line-height: 3.9375rem;
+  text-align: left;
+  font-size: 1.75rem;
+  letter-spacing: 2px;
+}
+@media screen and (max-width: 425px) {
+  .title h1 {
+    font-size: 17px;
+    line-height: 26px;
+  }
+  .pre_read P {
+    line-height: 7.9375rem;
+    line-height: 18px;
+  }
+  .test-middle {
+    vertical-align: middle;
+    padding-top: 0 ;
+  }
+}

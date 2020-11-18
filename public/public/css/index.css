@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    background: url("../img/rebeijing.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.logo {
+    width: 160px;
+    height: 37px;
+    margin: 11px 0 0 31px;
+    background: url("../img/xhlog.png");
+}
+
+.cont {
+    width: 1135px;
+    height: 620px;
+    margin: 160px auto;
+}
+
+.box1 {
+    float: left;
+    width: 495px;
+    height: 619px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 3px 3px 1px rgba(180, 229, 226, 0.2);
+}
+
+.box1 p {
+    text-align: center;
+    margin: 39px auto 0;
+    font-size: 34px;
+    font-family: Microsoft YaHei Regular, Microsoft YaHei Regular-Regular;
+    font-weight: 400;
+    color: #38a1e3;
+}
+
+.line {
+    width: 288px;
+    height: 30px;
+    margin: 20px auto 0;
+}
+
+.line span {
+    width: 42px;
+    height: 17px;
+    font-size: 18px;
+    font-family: Microsoft YaHei Regular, Microsoft YaHei Regular-Regular;
+    font-weight: 400;
+    text-align: left;
+    color: #38a1e3;
+    line-height: 27px;
+    letter-spacing: 1px;
+}
+
+.line input,
+.line select {
+    width: 182px;
+    height: 28px;
+    background: #ffffff;
+    border: 1px solid #c7c8c9;
+    border-radius: 3px;
+    float: right;
+}
+
+.line input {
+    width: 180px;
+    height: 26px;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+.buttn {
+    width: 167px;
+    height: 50px;
+    margin: 41px auto;
+}
+#submit:hover{
+    cursor: pointer;
+    color: black;
+
+}
+
+#return {
+    float: left;
+    width: 149px;
+    height: 42px;
+    background: #e7ecf0;
+    border-radius: 21px;
+    border: none;
+    outline: none;
+    color: #38A1E3;
+    font-size: 16px;
+}
+
+#submit {
+    float: right;
+    width: 149px;
+    height: 42px;
+    background: #38a1e3;
+    border-radius: 21px;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+}
+
+.box2 img {
+    float: right;
+    margin: 125px 0 0 0;
+}
