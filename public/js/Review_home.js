@@ -1,6 +1,6 @@
 $(function () {
     var status = 0
-    $(".read_more,#lang_content").on("touchstart", function () {
+    $(".read_more").on("touchstart", function () {
         // status 为0 可展开
         if (status == 0) {
             $(".cd_content_1 .content_detail   .content_detail_w").css("display", "block")
