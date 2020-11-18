@@ -7,6 +7,7 @@
     <title>测试主页</title>
     <script src="../js/jquery-1.12.3.js"></script>
     <link rel="stylesheet" href="../css/test-home-page.css">
+    <link rel="stylesheet" href="../css/pre_read.css">
     <script src="../js/test-home-page.js"></script>
     <script src="../js/logout.js"></script>
     <script src="../js/Check_login.js"></script>
@@ -28,9 +29,31 @@
         </div>
         <div class="test">
             <span class="test-left"></span>
-            <span class="test-middle">测试</span>
+            <span class="test-middle">测试内容</span>
             <span class="test-right"></span>
         </div>
+        <section class="pre_read ">
+            <h1 style="letter-spacing: 0.2rem;"> 一、什么是测评</h1>
+            <div class="pre_content">
+            <p>测评是综合利用心理学、行为学、管理学、测量学、计算机技术等多种学科和技术，
+                 通过科学、客观、标准的测量手段以及严密的测评过程和客观的评分标准，</p>  
+            <p>对被测者完成工作或活动所需要与之相关的知识水平、能力结构、个性特点、工作技能、
+            职业倾向、发展潜能等进行科学的测量、分析和评价, 为人力资源管理提供参考依据。</p>
+            </div>
+           
+            <h1> 二、为什么可以测评</h1> 
+            <div class="pre_content">
+            <p> 原因在于个体心理素质的差异性、个体心理素质的相对稳定性、个体心理素质的可测性。   
+          通俗观点：人心难测，知人知面不知心。</p>
+            <p>孟子：“权，然后知轻重；度，然后知长短。物皆然，心尤甚。”
+           美国心理学家，动物心理学的开创者，心理学联结主义的建立者和教育心理学体系的创始人
+            爱德华·李·桑代克：“凡物皆有质，有质就有量，有量就可测。”</p>
+            </div>
+            <h1> 三、怎么测评</h1> 
+            <div class="pre_content">
+                <p>三种测评方式：风格测评、特质测评、职业兴趣测评</p>
+            </div>
+        </section>
         <div class="content">
             <div class="temperament" onclick="ceping()" id="cepingfenshu">
                 <div class="cont-img"><img src="../icon/icon/Subject assessment.png" alt=""></div>
@@ -39,12 +62,12 @@
             </div>
             <div class="PDP" onclick="tcp()" id="tcp" style="cursor:pointer">
                 <div class="cont-img"><img src="../icon/icon/Subject assessment.png" alt=""></div>
-                <h2>PDP性格测评</h2>
+                <h2>特质测评</h2>
 
             </div>
-            <div class="occupation"  style="cursor:pointer" onclick="hld()">
+            <div class="occupation" style="cursor:pointer" onclick="hld()">
                 <div class="cont-img"><img src="../icon/icon/Subject assessment.png" alt=""></div>
-                <h2>兴趣测试</h2>
+                <h2>职业兴趣测评</h2>
             </div>
         </div>
     </div>
@@ -67,7 +90,7 @@
                 的建立者和教育心理学体系的创始人爱德华·李·桑代克：“凡物皆有质，有质就有量，
                 有量就可测。”<br>
                 三、怎么测评<br>
-                三种测评方式：气质（风格）测评、PDP性格测试、霍兰德职业兴趣自测
+                三种测评方式:风格测评、特质测评、职业兴趣测评
             </p>
             <div class="check"><input type="checkbox" name="tiyxs"><span>我已阅读上述介绍</span></div>
             <div class="content-button"><button class="button" onclick="tijiao()">提交</button>
@@ -86,5 +109,5 @@
     <!-- 蒙版 -->
     <div class="mask" style="display: none"></div>
 </body>
-
+<script src="../js/index.min.js"></script>
 </html>

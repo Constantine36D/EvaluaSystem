@@ -264,3 +264,29 @@ html {
     line-height: 25px;
   }
 }
+.read_more{
+  display: none;
+}
+@media screen and (max-width: 425px) {
+  .cd_content_1 {
+    margin-left:4rem ;
+  }
+  .cd_content_1 .content_detail {
+    width: 12rem;
+    
+  }
+  .cd_content_1 .content_detail   .content_detail_w{
+    padding-left: 3rem;
+    display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 15;
+overflow: hidden;
+
+  }
+  .read_more{
+    margin-bottom: 0.5rem;
+    color: #91989c;
+    font-size: 0.2rem;
+    display: block;
+  }
+}
