@@ -276,11 +276,12 @@ html {
     
   }
   .cd_content_1 .content_detail   .content_detail_w{
+    height: 14.5rem;
     padding-left: 3rem;
     display: -webkit-box;
--webkit-box-orient: vertical;
--webkit-line-clamp: 15;
-overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 15;
+    overflow: hidden;
 
   }
   .read_more{
