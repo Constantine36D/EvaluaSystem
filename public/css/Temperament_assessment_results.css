@@ -1,5 +1,27 @@
+.career_result_title{
+    display: none;
+    font-size: 1.75rem;
+    text-align: center;
+    font-weight: bold;
+}
 
+
+.career_result_title span{
+  
+    color: #bee6fb;  
+}
 @media only screen and (max-width: 768px){
+    body{
+        background-image: none;
+        
+        
+        }
+        .background{
+            background: none !important;
+        }
+    .career_result_title{
+        display: block;
+    }
     .main1 {
         padding: 6rem 2rem 4rem 1rem;
     }
@@ -26,8 +48,13 @@
         height: 2rem !important;
         font-size: 0.2rem !important;
     }
+    .left{
+        display: none;
+    }
 }
 @media only screen and (min-width: 768px){
+    .background {
+        background: none;}
     .main1 {
         padding: 6rem 3rem 4rem 1.5rem;
     }
@@ -361,13 +388,14 @@ td {
     letter-spacing: 2px;
 }
 .title {
+    /* display: none; */
     padding-top: 0;
 }
 .title p {
     text-align: left !important;
     margin-top: 0;
-    line-height: 4.2rem;
-    font-size: 2.5rem;
+    line-height: 2.2rem;
+    font-size: 1.5rem;
 }
 .title button {
     margin-left: 0;
