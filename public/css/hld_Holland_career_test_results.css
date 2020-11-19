@@ -128,6 +128,7 @@ nav {
     width: 50%;
 
 }
+
 .content p {
     font-size: 0.8rem;
     line-height: 1rem;
@@ -153,4 +154,22 @@ footer button {
     line-height: 28px;
     letter-spacing: 3px;
     border: none;
+}
+
+.foot_img {
+    background: url("../icon/icon/bcg.png");
+    padding-bottom: 2rem;
+}
+
+.img_nue {
+    width: 90%;
+    padding: 0 0.3rem;
+    margin: 2rem auto;
+    border-radius: 0.3rem;
+    overflow: hidden;
+}
+
+.img_nue img {
+    padding-top: 2rem;
+    width: 100%;
 }

@@ -41,6 +41,10 @@ window.onload = function () {
 
 
     }
+    back = function (){
+      history.back();
+    }
+
     btijiao = function () {
 
         $(".two").css('display', 'none')

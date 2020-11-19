@@ -16,7 +16,7 @@ $(function () {
 
         // 判断是否为第一项
         if ($("table").eq(0).css("display") == "block") {
-            alert("当前为第一项了嗷┗|｀O′|┛~~~~  ")
+            history.back();
         } else if (next_click_count > 1) {
             next_click_count--
 
@@ -61,7 +61,7 @@ $(function () {
             // R型
             var R_score = Number(second_count[1].split("=")[1])
             var common_score = 1;
-            var R_check_length = $('table:nth-child(1) input:radio:checked').length
+            var R_check_length = $('tr td:eq(1) input[name="o"]:radio:checked').length;
             R_score += R_check_length * common_score
             console.log(" R型", R_score);
             // A型

@@ -21,6 +21,22 @@ I= Request["I"];
 S= Request["S"];
 C= Request["C"];
 E= Request["E"];
+
+var data1 = [R,A,I,S,E,C];
+var data2 = ['R','A','I','S','E','C'];
+
+for (var k = 0 ; k < data1.length-1 ;k++){
+    for (var j = k+1 ; j < data1.length ; j++){
+        if (parseInt(data1[k]) < parseInt(data1[j])){
+            var num = data2[k];
+            data2[k] = data2[j];
+            data2[j] = num;
+            var num1 = data1[k];
+            data1[k] = data1[j];
+            data1[j] = num1;
+        }
+    }
+}
 $(document).ready(function (){
 
 
@@ -40,18 +56,18 @@ $(document).ready(function (){
                 let Str = ''
                 if (data.data.length == 0){
                     Str = `
-                    <p> 测评结果显示<br>
-                您属于 RIA 型人才<br>
-                适合的职业为：<br>
+                    <p><center>测评结果:</center> <br>
+                6种职业兴趣总分按大小排序分为:${data2[0]},${data2[1]},${data2[2]},${data2[3]},${data2[4]},${data2[5]}<br>
+                <center>前三项为${data2[0]}${data2[1]}${data2[2]},适合你的职业为:</center><br>
                 牙科技术员、陶工、建筑设计员、模型工、细木工、制作链条人员。
             </p>
                     `
                 }else {
                     Str = `
-            <p> 测评结果显示<br>
-                您属于 ${data.data[0].type} 型人才<br>
-                适合的职业为：<br>
-                ${data.data[0].info}
+                 <p><center>测评结果:</center> <br>
+                6种职业兴趣总分按大小排序分为:${data2[0]},${data2[1]},${data2[2]},${data2[3]},${data2[4]},${data2[5]}<br>
+                <center>前三项为${data.data[0].type},适合你的职业为:</center><br>
+                 ${data.data[0].info}
             </p>
             `
                 }

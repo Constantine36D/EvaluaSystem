@@ -9,7 +9,7 @@ $(function () {
 
         // 判断是否为第一项
         if ($("table").eq(0).css("display") == "table") {
-            alert("已经是第一项了 嗷~~~~  ")
+            history.back();
         }
         else if(next_click_count >1 ){
             next_click_count --
@@ -27,7 +27,7 @@ $(function () {
             alert("每一列都要选一个┗|｀O′|┛ 嗷~~！！！")
             return false
         }
-        
+
         next_click_count++
         if (next_click_count <= 2 ) {
 

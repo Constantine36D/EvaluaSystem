@@ -29,6 +29,7 @@
         width: 90% !important;
     }
     .classify_img {
+        width: 25% !important;
         line-height: 5rem!important;
     }
     .test_in h4{
@@ -44,9 +45,10 @@
 
     .header_title .qz_mark {
         width: 4.3rem!important;
-
     }
-
+    .classify_img {
+        width: 25% !important;
+    }
     .qz_mark p {
         font-size: 0.2rem!important;
     }
@@ -126,14 +128,14 @@ section {
 }
 
 .classify_img {
-    width: 25%;
+    width: 35%;
     line-height: 3rem;
     text-align: center;
 }
 
 .classify_img .img_border {
     padding-top: 0.1rem;
-    width: 50%;
+    width: 35%;
     margin: 0 auto;
 }
 

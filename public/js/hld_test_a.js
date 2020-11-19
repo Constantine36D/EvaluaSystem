@@ -88,7 +88,7 @@ window.onload = function () {
     // 算分开始
     // R型
     var R_score = 0
-    var common_score = 6;
+    var common_score = 1;
     var R_check_length = $('.one input:radio:checked').length
     R_score = R_check_length * common_score
     console.log(" R型",R_score);
