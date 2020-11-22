@@ -144,7 +144,7 @@ footer {
 }
 footer button {
     height: 2.5rem;
-    width: 8rem;
+    width: 10rem;
     font-size: 1rem;
     background: #38a1e3;
     border-radius: 21px;
@@ -172,4 +172,8 @@ footer button {
 .img_nue img {
     padding-top: 2rem;
     width: 100%;
+}
+
+.title button {
+    width: 9.5rem;
 }

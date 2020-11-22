@@ -528,3 +528,8 @@ input[type="checkbox"] {
     left: 35%;
   }
 }
+
+.log0 {
+    width: 3rem!important;
+    height: 1rem!important;
+}
