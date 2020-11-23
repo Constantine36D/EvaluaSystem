@@ -41,9 +41,7 @@ var work =unescape(window.location.href).split("~")[1].split("工")[0].split(":"
 var major=unescape(window.location.href).split("~")[1].split("工")[1].split(":")[1]
 console.log( work)
     console.log(major);
-    
-    $("#jieguo").append("你理想的工作是:"+work)
-    $("#jieguo").append("你理想的专业是:"+major)
+
 $(document).ready(function (){
 
 
@@ -63,24 +61,29 @@ $(document).ready(function (){
                 let Str = ''
                 if (data.data.length == 0){
                     Str = `
-                    <p><center>测评结果:</center> <br>
-                6种职业兴趣总分按大小排序分为:${data2[0]},${data2[1]},${data2[2]},${data2[3]},${data2[4]},${data2[5]}<br>
-                <center>前三项为${data2[0]}${data2[1]}${data2[2]},适合你的职业为:</center><br>
+                    测评结果:
+                6种职业兴趣总分按大小排序分为:${data2[0]},${data2[1]},${data2[2]},${data2[3]},${data2[4]},${data2[5]}
+                前三项为${data2[0]}${data2[1]}${data2[2]},适合你的职业为:
                 牙科技术员、陶工、建筑设计员、模型工、细木工、制作链条人员。
             </p>
                     `
                 }else {
                     Str = `
-                 <p><center>测评结果:</center> <br>
-                6种职业兴趣总分按大小排序分为:${data2[0]},${data2[1]},${data2[2]},${data2[3]},${data2[4]},${data2[5]}<br>
-                <center>前三项为${data.data[0].type},适合你的职业为:</center><br>
+                 测评结果:
+                6种职业兴趣总分按大小排序分为:${data2[0]},${data2[1]},${data2[2]},${data2[3]},${data2[4]},${data2[5]}
+                <br/>
+                前三项为${data.data[0].type},适合你的职业为:
                  ${data.data[0].info}
-            </p>
+                </p>
             `
                 }
 
-           $('#jieguo').empty();
-           $('#jieguo').append(Str);
+                $("#jieguo").append("您心目中的最想干的三种工作是："+work)
+                $("#jieguo").append(`<br/>`)
+                $("#jieguo").append("您心目中的最想读的三种专业是："+major)
+                $("#jieguo").append(`<br/>`)
+           // $('#jieguo').empty();
+                $('#jieguo').append(Str);
             }
             if(data.code == 100){
                 alert('显示失败')

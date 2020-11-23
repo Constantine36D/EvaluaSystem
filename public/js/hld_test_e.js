@@ -93,7 +93,7 @@ window.onload = function () {
       console.log(" R型",R_score);
   // A型
       var A_score =  Number(three_count[2].split("=")[1])
-      var A_check_length = $('.five input:radio:checked').length
+      var A_check_length = $('.two  input:radio:checked').length
       A_score +=A_check_length * common_score
       console.log(" A型",A_score);
       // I型
@@ -103,12 +103,12 @@ window.onload = function () {
       console.log(" I型",I_score);
       // S型
       var S_score =  Number(three_count[4].split("=")[1])
-      var S_check_length = $('.two input:radio:checked').length
+      var S_check_length = $('.four input:radio:checked').length
       S_score +=S_check_length * common_score
       console.log(" S型",S_score);
       // E型
       var E_score =  Number(three_count[5].split("=")[1])
-      var E_check_length = $('.four input:radio:checked').length
+      var E_check_length = $('.five input:radio:checked').length
       E_score += E_check_length * common_score
       console.log(" E型",E_score);
    // C型
@@ -118,7 +118,7 @@ window.onload = function () {
    console.log(" C型",C_score);
    var url =unescape(window.location.href)
    window.location.href="hld_E.html?"+"~"+escape(url.split("~")[1])+"~"+ "&R="+R_score+"&A="+A_score+"&I="+I_score+"&S="+S_score+"&E="+E_score+"&C="+C_score
-  
+
   //  window.location.href="hld_E.html?&"+"R="+R_score+"&A="+A_score+"&I="+I_score+"&S="+S_score+"&E="+E_score+"&C="+C_score
     }
 

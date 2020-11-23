@@ -46,13 +46,13 @@
     console.log(" R型",R_score);
 // A型
     var A_score = Number(four_count[2].split("=")[1])
-    $('input:radio[name="a5"]:checked,input:radio[name="b5"]:checked').each(function () {
+    $('input:radio[name="a6"]:checked,input:radio[name="b6"]:checked').each(function () {
         A_score += Number($(this).val())
     });
     console.log(" A型",A_score);
     // I型
     var I_score = Number(four_count[3].split("=")[1])
-    $('input:radio[name="a6"]:checked,input:radio[name="b6"]:checked').each(function () {
+    $('input:radio[name="a5"]:checked,input:radio[name="b5"]:checked').each(function () {
         I_score += Number($(this).val())
     });
     console.log(" I型",I_score);
@@ -75,7 +75,6 @@
 });
 var url =unescape(window.location.href)
 
-
 console.log(" C型",C_score);
 
             $.ajax({
@@ -91,7 +90,7 @@ console.log(" C型",C_score);
                 success:function (data){
                     console.log(data)
                     if(data.code == 200){
-                        window.location.href = "hld_Holland_career_test_results.html?"+"~"+escape(url.split("~")[1])+"~"+"R="+R_score+"&A="+A_score+"&I="+I_score+"&S="+S_score+"&E="+E_score+"&C="+C_score
+                        window.location.href = "hld_Holland_career_test_results.html?"+"~"+escape(url.split("~")[1])+"~"+"&R="+R_score+"&A="+A_score+"&I="+I_score+"&S="+S_score+"&E="+E_score+"&C="+C_score
 
                         // window.location.href = "hld_Holland_career_test_results.html?&"+"R="+R_score+"&A="+A_score+"&I="+I_score+"&S="+S_score+"&E="+E_score+"&C="+C_score
                     }

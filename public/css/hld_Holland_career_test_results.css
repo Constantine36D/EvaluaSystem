@@ -125,8 +125,8 @@ nav {
     justify-content: space-between;
 }
 .content {
-    width: 50%;
-
+    /*width: 50%;*/
+    line-height: 37px;
 }
 
 .content p {

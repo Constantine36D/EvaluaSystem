@@ -234,3 +234,11 @@ ol li {
 .mr {
     margin-left: 1.5rem;
 }
+
+.padding {
+    margin: 1rem 0;
+}
+
+.ma_pa {
+    padding-top: 0.4rem;
+}
