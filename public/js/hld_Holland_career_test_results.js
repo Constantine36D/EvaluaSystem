@@ -37,6 +37,13 @@ for (var k = 0 ; k < data1.length-1 ;k++){
         }
     }
 }
+var work =unescape(window.location.href).split("~")[1].split("工")[0].split(":")[1]
+var major=unescape(window.location.href).split("~")[1].split("工")[1].split(":")[1]
+console.log( work)
+    console.log(major);
+    
+    $("#jieguo").append("你理想的工作是:"+work)
+    $("#jieguo").append("你理想的专业是:"+major)
 $(document).ready(function (){
 
 

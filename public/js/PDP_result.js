@@ -1,7 +1,7 @@
 $(function(){
     // 返回测评主页
     $(".back_btn").click(function () {
-        window.location.href = "test-home-page.html"
+        window.location.href = "hld_A.html"
     })
 
 var url_Arr =window.location.href.split("&")

@@ -209,3 +209,28 @@ section {
     margin-left: 0.17rem;
 }
 
+ol li {
+    color: black;
+}
+
+.size {
+    height: 0.7rem;
+    width: 0.3rem;
+}
+
+.size img {
+    width: 100%;
+    height: 100%;
+}
+
+.level {
+    margin-top: 60%;
+}
+
+.ml {
+    margin-right: 1.5rem;
+}
+
+.mr {
+    margin-left: 1.5rem;
+}

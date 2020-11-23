@@ -1,4 +1,4 @@
-$(function () {
+  $(function () {
     // 先统计上个部分：“第四部分”的各个部分分数
     var  four_count =window.location.href.split("&")
     console.log(four_count);
@@ -73,6 +73,9 @@ $(function () {
  $('input:radio[name="a2"]:checked,input:radio[name="b2"]:checked').each(function () {
     C_score += Number($(this).val())
 });
+var url =unescape(window.location.href)
+
+
 console.log(" C型",C_score);
 
             $.ajax({
@@ -88,7 +91,9 @@ console.log(" C型",C_score);
                 success:function (data){
                     console.log(data)
                     if(data.code == 200){
-                        window.location.href = "hld_Holland_career_test_results.html?&"+"R="+R_score+"&A="+A_score+"&I="+I_score+"&S="+S_score+"&E="+E_score+"&C="+C_score
+                        window.location.href = "hld_Holland_career_test_results.html?"+"~"+escape(url.split("~")[1])+"~"+"R="+R_score+"&A="+A_score+"&I="+I_score+"&S="+S_score+"&E="+E_score+"&C="+C_score
+
+                        // window.location.href = "hld_Holland_career_test_results.html?&"+"R="+R_score+"&A="+A_score+"&I="+I_score+"&S="+S_score+"&E="+E_score+"&C="+C_score
                     }
                     if(data.code == 100){
                         alert('提交失败')

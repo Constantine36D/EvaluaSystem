@@ -116,7 +116,10 @@ window.onload = function () {
    var C_check_length = $('.six input:radio:checked').length
    C_score += C_check_length * common_score
    console.log(" C型",C_score);
-   window.location.href="hld_E.html?&"+"R="+R_score+"&A="+A_score+"&I="+I_score+"&S="+S_score+"&E="+E_score+"&C="+C_score
+   var url =unescape(window.location.href)
+   window.location.href="hld_E.html?"+"~"+escape(url.split("~")[1])+"~"+ "&R="+R_score+"&A="+A_score+"&I="+I_score+"&S="+S_score+"&E="+E_score+"&C="+C_score
+  
+  //  window.location.href="hld_E.html?&"+"R="+R_score+"&A="+A_score+"&I="+I_score+"&S="+S_score+"&E="+E_score+"&C="+C_score
     }
 
   }
