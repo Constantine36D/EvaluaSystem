@@ -1,4 +1,4 @@
-$(function () {
+  $(function () {
     // 先统计上个部分：“第四部分”的各个部分分数
     var  four_count =window.location.href.split("&")
     console.log(four_count);
