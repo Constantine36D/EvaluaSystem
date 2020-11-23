@@ -1,3 +1,5 @@
+zeroModal.success('职业兴趣完成，请点击选课系统进入选课');
+
 var url=location.search;
 var A;
 var R;

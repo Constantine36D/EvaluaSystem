@@ -1,3 +1,5 @@
+zeroModal.success('特质测评完成，请点击职业兴趣测评进入测评');
+
 $(function(){
     // 返回测评主页
     $(".back_btn").click(function () {

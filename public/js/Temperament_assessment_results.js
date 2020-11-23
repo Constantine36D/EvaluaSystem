@@ -1,3 +1,6 @@
+
+zeroModal.success('风格测评完成，请点击特质测评进入测评');
+
 var url=location.search;
 var A;
 var B;

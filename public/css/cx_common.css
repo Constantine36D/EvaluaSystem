@@ -236,6 +236,9 @@ html {
   html {
     font-size: 82.21540374px;
   }
+    .lun_div {
+        margin-left: 7.47rem;
+    }
 }
 @media screen and (min-width: 1928px) {
   html {
